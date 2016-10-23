@@ -6,7 +6,7 @@
 
 <%@page import="java.util.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
+<%@ page import="uk.ac.dundee.computing.ajm.instagrim.stores.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,7 +23,7 @@
         
         <nav>
             <ul>
-                <li class="nav"><a href="/Instagrim/uploadprofile.jsp">Upload Profile</a></li>
+                
                 <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
             </ul>
         </nav>

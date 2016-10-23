@@ -1,4 +1,5 @@
-<%-- 
+
+<%--
     Document   : UsersPics
     Created on : Sep 24, 2014, 2:52:48 PM
     Author     : Administrator
@@ -6,7 +7,7 @@
 
 <%@page import="java.util.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
+<%@ page import="uk.ac.dundee.computing.ajm.instagrim.stores.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,11 +44,18 @@
                 Pic p = (Pic) iterator.next();
 
         %>
-        <a href="/Instagrim/Image/<%=p.getSUUID()%>" ><img src="/Instagrim/Thumb/<%=p.getSUUID()%>"></a><br/><%
-
-            }
-            }
-        %>
+        <a href="/Instagrim/Image/<%=p.getSUUID()%>" ><img src="/Instagrim/Thumb/<%=p.getSUUID()%>"></a><br/>
+        <input type="submit" value="Make Profile Picture">
+        
+        <form name="form" method="POST" action="Image">
+            <input type="hidden" name="PictureID" value="<%=p.getSUUID()%>">
+                   <input type="hidden" name="postid" value="<profilepic>">
+        </form>
+        
+               <%
+                   }
+                    }
+                   %>
         </article>
         <footer>
             <ul>

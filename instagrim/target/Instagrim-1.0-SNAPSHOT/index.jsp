@@ -6,7 +6,7 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
+<%@page import="uk.ac.dundee.computing.ajm.instagrim.stores.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,7 +23,7 @@
             <ul>
 
                <li class="footer"><a href="/Instagrim">Home</a></li>
-                <li><a href="upload.jsp">Upload</a></li>
+                <li><a href="/Instagrim/Upload">Upload</a></li>
                     <%
                         
                         LoggedIn lg = (LoggedIn) session.getAttribute("LoggedIn");
@@ -33,9 +33,8 @@
                     %>
 
                 <li><a href="/Instagrim/Images/<%=lg.getUsername()%>">Your Images</a></li>
-                <li><a href="profile.jsp">Profile</a></li>
-                <li><a href="uploadprofile.jsp">Upload Profile</a></li>
-                <li><a href="logout.jsp">Log Out</a></li>
+                <li><a href="/Instagrim/Profile">Profile</a></li>
+                <li><a href="/Instagrim/LogOut">Log Out</a></li>
                     <%}
                             }else{
                                 %>

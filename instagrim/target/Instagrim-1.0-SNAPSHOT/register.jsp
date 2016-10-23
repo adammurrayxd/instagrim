@@ -32,7 +32,10 @@
             <form method="POST"  action="Register" onsubmit="return username_validation()">
                 <ul>
                     <li>User Name <input type="text" maxlength="20" name="username" required></li>
-                    <li>Password <input type="password" maxlength="20" name="password" required></li>
+                    <li>Password <input type="text" maxlength="20" name="password" required></li>
+                    <li>Email Address <input type="text" maxlength="40" name="email-address" required></li>
+                    <li>First Name <input type="text" maxlength="20" name="first-name" required></li>
+                    <li>Last Name <input type="text" maxlength="20" name="last-name" required></li>
                 </ul>
                 <br/>
                 <input type="submit" value="Register"> 

@@ -17,7 +17,7 @@
         <h2>Your world in Black and White</h2>
         <nav>
             <ul>
-                <li class="nav"><a href="upload.jsp">Upload</a></li>
+                
                 <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
             </ul>
         </nav>
@@ -26,7 +26,7 @@
             <h3>File Upload</h3>
             <form method="POST" enctype="multipart/form-data" action="Image">
                 File to upload: <input type="file" name="upfile"><br/>
-
+                <input type="hidden" name="postid" value="profpic">
                 <br/>
                 <input type="submit" value="Press"> to upload the file!
             </form>
